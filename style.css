@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url(/styles/fonts/static/Montserrat-Black.ttf);
+	src: url(/styles/fonts/static/Montserrat-BlackItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-Bold.ttf);
+	src: url(/styles/fonts/static/Montserrat-BoldItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-ExtraBold.ttf);
+	src: url(/styles/fonts/static/Montserrat-ExtraBoldItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-ExtraLight.ttf);
+	src: url(/styles/fonts/static/Montserrat-ExtraLightItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-Italic.ttf);
+	src: url(/styles/fonts/static/Montserrat-Light.ttf);
+	src: url(/styles/fonts/static/Montserrat-LightItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-Medium.ttf);
+	src: url(/styles/fonts/static/Montserrat-MediumItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-Regular.ttf);
+	src: url(/styles/fonts/static/Montserrat-SemiBold.ttf);
+	src: url(/styles/fonts/static/Montserrat-Thin.ttf);
+	src: url(/styles/fonts/static/Montserrat-ThinItalic.ttf);
+	src: url(/styles/fonts/static/Montserrat-SemiBoldItalic.ttf);
+	src: url(/styles/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+	src: url(/styles/fonts/Montserrat-VariableFont_wght.ttf); 
+}
+
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box; 
+	color: rgba(0, 0, 0, 1);
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: rgb(213,130,18);
+	background: linear-gradient(291deg,
+	rgba(213,130,18,0.7030461842940301) 0%,
+	rgba(213,130,18,0.29968483975621496) 53%, 
+	rgba(213,130,18,0.7030461842940301) 95%);
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+    height: 100vh;
+}
+main {
+	position: relative;
+	width: 100%;
+	flex: 1;
+}
+
+h1 {padding: 20px 0;}
+h3 {padding-bottom: 5px;}
+
+header div {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+footer div {
+	display: flex; 
+	align-items: center; 
+	padding: 20px 0;
+}
+
+header,
+footer {
+	width: 100%;
+	background: rgb(0,0,0);
+	background: linear-gradient(315deg, 
+	rgba(0,0,0,0.5041666324733018) 0%, 
+	rgba(0,0,0,0.09800416748730745) 55%, 
+	rgba(0,0,0,1) 88%);
+}
+
+.signature {
+	display: flex; 
+	align-items: center; 
+	flex: 1;
+}
+.signature img {
+	width: 90px; 
+	height: 30px; 
+	margin-right: 10px; 
+	transition: 500ms; 
+	transition-timing-function: ease;
+}
+.signature img:hover {
+	cursor: pointer; 
+	transform: scale(1.1);
+}
+.signature span, h1 {color: #eee;}
+.signature a {
+	display: flex; 
+	align-items: center;
+}
+
+.container { 
+	margin: 0 auto; 
+	max-width: 1240px; 
+	min-width: 320px; 
+	padding: 10px;
+}
+
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
