@@ -1,3 +1,5 @@
+@import "style-html-css.css";
+
 @font-face {
 	font-family: 'Montserrat', sans-serif;
 	src: url(/styles/fonts/static/Montserrat-Black.ttf);
@@ -37,7 +39,7 @@ body {
 	display: flex; 
 	flex-direction: column;
 	align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 main {
 	position: relative;
@@ -96,6 +98,7 @@ footer {
 	max-width: 1240px; 
 	min-width: 320px; 
 	padding: 10px;
+	overflow: hidden;
 }
 
 
@@ -104,3 +107,4 @@ footer {
 
 @media (max-width: 768px) {
 }
+
