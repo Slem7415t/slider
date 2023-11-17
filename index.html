@@ -6,6 +6,12 @@
     <link type="image/png" sizes="16x16" rel="icon" href="images/icon.png" />
     <title>Slider</title>
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,8 +19,8 @@
       <div class="container"><h1>Карусель(slider)</h1></div>
     </header>
     <main>
-      <div class="container">
-        <h2>Карусель(slider) на html и css</h2>
+      <section class="container">
+        <h2>Карусель на html и css</h2>
         <div class="all">
           <input checked type="radio" name="respond" id="desktop" />
           <article id="slider">
@@ -54,8 +60,150 @@
         ><a href="https://www.youtube.com/watch?v=gVxyTOPPEPc"
           >https://www.youtube.com/watch?v=gVxyTOPPEPc</a
         >
-      </div>
-      <div class="container"></div>
+      </section>
+      <section class="container">
+        <h2>Карусель с использовании библиотек jquery и slick</h2>
+        <div class="slider-slick" id="slider-slick">
+          <div><img src="file.jpg" alt="picture" /></div>
+          <div><img src="file.jpg" alt="picture" /></div>
+          <div><img src="file.jpg" alt="picture" /></div>
+        </div>
+        <span>Ссылка на источник: </span
+        ><a href="https://jquery.com/">jquery, </a
+        ><a href="https://kenwheeler.github.io/slick/">slick</a>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Карусель на html, css и jQuery</h2>
+        </div>
+        <div class="s-jq">
+          <div class="slider-jq">
+            <span class="arrow" data-arrow="prev"></span>
+            <div class="slider-jq-center">
+              <ul>
+                <li>
+                  <span
+                    ><img src="images/cards/image-1.jpg" alt="image-1"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-2.jpg" alt="image-2"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-3.jpg" alt="image-3"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-4.jpg" alt="image-4"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-5.jpg" alt="image-5"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-6.jpg" alt="image-6"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-7.jpg" alt="image-7"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-8.jpg" alt="image-8"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-9.jpg" alt="image-9"
+                  /></span>
+                </li>
+                <li>
+                  <span
+                    ><img src="images/cards/image-10.jpg" alt="image-10"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+            <span class="arrow" data-arrow="next"></span>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="gallery-js">
+          <div class="gallery-js-container">
+            <img
+              class="gallery-js-item gallery-js-item-1"
+              src="images/cards/image-1.jpg"
+              alt="image-1"
+              data-index="1"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-2"
+              src="images/cards/image-2.jpg"
+              alt="image-2"
+              data-index="2"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-3"
+              src="images/cards/image-3.jpg"
+              alt="image-3"
+              data-index="3"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-4"
+              src="images/cards/image-4.jpg"
+              alt="image-4"
+              data-index="4"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-5"
+              src="images/cards/image-5.jpg"
+              alt="image-5"
+              data-index="5"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-6"
+              src="images/cards/image-6.jpg"
+              alt="image-6"
+              data-index="6"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-7"
+              src="images/cards/image-7.jpg"
+              alt="image-7"
+              data-index="7"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-8"
+              src="images/cards/image-8.jpg"
+              alt="image-8"
+              data-index="8"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-9"
+              src="images/cards/image-9.jpg"
+              alt="image-9"
+              data-index="9"
+            />
+            <img
+              class="gallery-js-item gallery-js-item-10"
+              src="images/cards/image-10.jpg"
+              alt="image-10"
+              data-index="10"
+            />
+          </div>
+          <div class="gallery-js-controls"></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
@@ -72,6 +220,21 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.6.3.min.js"></script>
     <script type="module" src="js/script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $("#slider-slick").slick({
+        infinity: true,
+        prevArrow:
+          "<div class='slick-onw-btn-slick onw-btn-prev-slick'>PREV</div>",
+        nextArrow:
+          "<div class='slick-onw-btn-slick onw-btn-next-slick'>NEXT</div>",
+      });
+    </script>
   </body>
 </html>

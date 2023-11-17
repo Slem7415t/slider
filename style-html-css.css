@@ -1,17 +1,17 @@
-#slider { /*положение слайдера*/
+#slider { 
     position: relative;
 	text-align: center;
     top: 10px;
-}
+} /*положение слайдера*/
 
-#slider{ /*центровка слайдера*/
+#slider { 
 	margin: 0 auto;
-}
+} /*центровка слайдера*/
 
-#slides article{ /*все изображения справа друг от друга*/
+#slides article { 
 	width: 20%;
 	float: left;
-}
+} /*все изображения справа друг от друга*/
 
 #slides .image{ /*устанавливает общий размер блока с изображениями*/
 	width: 500%;

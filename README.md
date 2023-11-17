@@ -6,3 +6,5 @@
 
 Учился по видео: https://www.youtube.com/watch?v=cMw9x0BP_xk&t=784s <br>
 и каналу: https://www.youtube.com/@ITDoctor
+
+https://www.youtube.com/watch?v=JX5qDzWDF4U&t=2s
